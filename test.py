@@ -48,7 +48,7 @@ class Ui_MainWindow(object):
 
     def clicked(self):
         city = self.input.text()
-        api_address = 'c56eecac03b967a3cdba2bef2b2e26f3'
+        api_address = 'Your API KEY'
         base_url = 'http://api.openweathermap.org/data/2.5/weather?'
         complete_url = base_url + "appid=" + api_address + "&q=" + city + "&units=metric"
         response = requests.get(complete_url)
